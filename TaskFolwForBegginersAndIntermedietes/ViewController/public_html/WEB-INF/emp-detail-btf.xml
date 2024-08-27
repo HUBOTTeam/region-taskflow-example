@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="emp-detail-btf">
+    <template-reference>
+      <document>/WEB-INF/tut-standared-task-flow-template.xml</document>
+      <id>tut-standared-task-flow-template</id>
+    </template-reference>
+    <data-control-scope>
+      <isolated/>
+    </data-control-scope>
+    <input-parameter-definition id="__3">
+      <name>departmentIdParam</name>
+      <value>#{pageFlowScope.EmployeeDetailProccessBean}</value>
+      <required/>
+    </input-parameter-definition>
+    <managed-bean id="__2">
+      <managed-bean-name>EmployeeDetailProccessBean</managed-bean-name>
+      <managed-bean-class>view.EmployeeDetailProccessBean</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

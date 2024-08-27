@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="emp-edit-btf">
+    <template-reference>
+      <document>/WEB-INF/tut-standared-task-flow-template.xml</document>
+      <id>tut-standared-task-flow-template</id>
+    </template-reference>
+    <transaction>
+      <new-transaction/>
+    </transaction>
+    <data-control-scope>
+      <isolated/>
+    </data-control-scope>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

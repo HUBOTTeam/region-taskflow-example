@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelSplitter id="ps1" orientation="vertical" splitterPosition="500">
+    <f:facet name="first">
+      <af:outputText id="ot1" value="#{controllerContext.currentViewPort.exceptionData.message}"/>
+    </f:facet>
+    <f:facet name="second">
+      <af:outputText value="#{controllerContext.currentViewPort.exceptionData.stackTrace}" id="ot2"/>
+    </f:facet>
+  </af:panelSplitter>
+</ui:composition>
